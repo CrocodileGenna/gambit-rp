@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Psihodel666.github.io/IceCream",
+  "homepage": "https://CrocodileGenna.github.io/gambit-rp",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /IceCream/"
+    "build": "parcel build src/*.html --public-url /gambit-rp/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Psihodel666/IceCream.git"
+    "url": "git+https://github.com/CrocodileGenna/gambit-rp.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",

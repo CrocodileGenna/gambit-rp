@@ -1,0 +1,108 @@
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero__left">
+      <div class="hero__title-box">
+        <h1 class="hero__title animation">
+          <span class="animation__left">ice cream </span>
+          <span class="animation__right">made with</span>
+          <span class="hero__title--red animation__left">passion</span>
+        </h1>
+        <ul class="hero__left-list list">
+          <li class="hero__left-item">
+            <a class="hero__left-link--red" href="#products__card">Products</a>
+          </li>
+          <li class="hero__left-item">
+            <a class="hero__left-link--white" href="#about">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__left-wrap-one">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/desktop-hero-milk@1x.png 1x,
+              ./images/hero/desktop-hero-milk@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/hero/tablet-hero-milk@1x.png 1x,
+              ./images/hero/tablet-hero-milk@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero__jar-milk"
+            src="./images/hero/desktop-hero-milk@1x.png"
+            alt="Ice Cream"
+          />
+        </picture>
+        <div class="hero__left-wrap-two">
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <a class="hero__link link" href="">
+            <svg class="hero__icon">
+              <use href="./images/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__center">
+      <picture>
+        <source
+          srcset="./images/hero/desktop-hero@1x.png 1x, ./images/hero/desktop-hero@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/hero/tablet-hero@1x.png 1x, ./images/hero/tablet-hero@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/hero/mobile-hero@1x.png 1x, ./images/hero/mobile-hero@2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img class="hero__icecream" src="./images/hero/desktop-hero@1x.png" alt="Ice Cream" />
+      </picture>
+    </div>
+
+    <div class="hero__right">
+      <ul class="hero__right-list list">
+        <li class="hero__right-item">
+          <p class="hero__right-amount">16</p>
+          <p class="hero__right-text">cafes</p>
+        </li>
+        <li class="hero__right-item">
+          <p class="hero__right-amount">23</p>
+          <p class="hero__right-text">food trucks</p>
+        </li>
+      </ul>
+      <picture>
+        <source
+          srcset="
+            ./images/hero/desktop-hero-girl@1x.png 1x,
+            ./images/hero/desktop-hero-girl@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero/tablet-hero-girl@1x.png 1x,
+            ./images/hero/tablet-hero-girl@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="hero__girl-icecream"
+          src="./images/hero/desktop-hero-girl@1x.png"
+          alt="girl with ice cream - soooooo tasty"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

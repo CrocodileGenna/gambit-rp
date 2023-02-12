@@ -36,7 +36,30 @@ li {
   padding: 0;
   margin: 0;
 }
+.conteiner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid rgb(225, 169, 159);
 
+  @media screen and (max-width: 480px) {
+    min-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /* animation */
 @keyframes rotate {
   from {
@@ -46,6 +69,7 @@ li {
     transform: rotate(360deg);
   }
 }
+
 /* fon-img */
 .fon-img-1 {
   position: absolute;
@@ -56,7 +80,7 @@ li {
 }
 .fon-img-2 {
   position: absolute;
-  top: 74%;
+  top: 76%;
   left: 0%;
   z-index: 0;
   filter: brightness(0.9);
@@ -69,13 +93,6 @@ li {
   filter: brightness(0.9);
 }
 /*------------------ header ------------------*/
-.standart {
-  height: 116px;
-  width: 100%;
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-}
 
 .logo-menu {
   float: left;
@@ -83,6 +100,13 @@ li {
   margin-right: 0;
   width: auto;
   padding-top: 20px;
+
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  }
 }
 
 .logotype {
@@ -160,7 +184,7 @@ li {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  padding-top: 70px;
+  margin-top: 70px;
   width: 700px;
 }
 
@@ -254,6 +278,7 @@ li {
   background-color: #fff;
   color: black;
   font-size: 20px;
+  z-index: 9999;
 }
 .footer__btn:hover,
 .footer__btn:focus {
@@ -264,4 +289,5 @@ li {
 .footer__dopinfo {
   display: flex;
   margin-bottom: 20px;
+  z-index: 9999;
 }

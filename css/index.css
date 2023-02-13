@@ -18,10 +18,38 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--akcent);
 }
+
+/* ------------------------------background-image------------------------------ */
 .wrapper {
   position: relative;
 }
+.wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/kindpng_4791613.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+  top: 30%;
+  right: 5%;
+}
+.wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/pngimg.com\ -\ gta_PNG26.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  bottom: 14%;
+  left: 0;
+  z-index: 0;
+}
 
+/* ------------------------------container and rotate------------------------------ */
 .container {
   max-width: 1180px;
   margin: 0px auto;
@@ -35,6 +63,7 @@ html {
     transform: rotate(360deg);
   }
 }
+
 /* ------------------------------header body------------------------------ */
 .header {
   position: fixed;
@@ -266,6 +295,7 @@ html {
   border: 4px var(--colorText) solid;
   background-color: var(--colorText);
   filter: brightness(0.5);
+  z-index: 5;
   transition: all 0.6s ease 0s;
 }
 .content__card__shadow:focus,
@@ -330,9 +360,11 @@ html {
   }
   .content__text h1 {
     font-size: 22px;
+    z-index: 5;
   }
   .content__text p {
     width: 275px;
+    z-index: 5;
   }
   /* ------------------------------content buttons------------------------------ */
   .content__buttons {
@@ -345,11 +377,13 @@ html {
     width: 150px;
     padding: 12px 0;
     font-size: 14px;
+    z-index: 5;
   }
   .content__buttons__download {
     width: 150px;
     padding: 12px 0;
     font-size: 14px;
+    z-index: 5;
   }
   /* ------------------------------content card------------------------------ */
   .content__card__card {
@@ -366,7 +400,7 @@ html {
     margin: 40px 0 0 0;
   }
   .footer__title {
-    font-size: 17px;
+    font-size: 15px;
   }
   .footer__button {
     width: 150px;
@@ -376,5 +410,19 @@ html {
   .footer__dopinfo {
     font-size: 14px;
     margin: 30px 0 40px 0;
+  }
+
+  /* ------------------------------background-image------------------------------ */
+  .wrapper::before {
+    width: 150px;
+    height: 150px;
+    top: 32%;
+    z-index: 0;
+  }
+  .wrapper::after {
+    height: 250px;
+    width: 250px;
+    bottom: 16%;
+    left: 0;
   }
 }

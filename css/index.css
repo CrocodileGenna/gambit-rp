@@ -45,9 +45,8 @@ html {
   background-position: center;
   height: 250px;
   width: 250px;
-  top: 10%;
-  left: 5%;
-  opacity: 0.5;
+  top: 9%;
+  left: 3%;
   z-index: 0;
 }
 
@@ -383,7 +382,6 @@ html {
     width: 130px;
     top: 24%;
     left: -7%;
-    opacity: 1;
   }
   /* ------------------------------content text------------------------------ */
   .content {
@@ -472,7 +470,6 @@ html {
     width: 120px;
     top: 5%;
     left: -4%;
-    opacity: 1;
   }
 
   /* ------------------------------content text------------------------------ */
@@ -550,9 +547,8 @@ html {
   .wrapper::after {
     height: 150px;
     width: 150px;
-    top: 4%;
+    top: 7%;
     left: 0;
-    opacity: 1;
   }
 
   /* ------------------------------content text------------------------------ */
@@ -632,7 +628,6 @@ html {
     width: 220px;
     top: 10%;
     left: 0;
-    opacity: 1;
   }
 
   /* ------------------------------content card------------------------------ */

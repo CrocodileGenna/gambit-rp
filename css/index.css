@@ -34,18 +34,20 @@ html {
   width: 250px;
   top: 30%;
   right: 5%;
+  z-index: 0;
 }
 .wrapper::after {
   content: "";
   position: absolute;
-  background-image: url(../images/pngimg.com\ -\ gta_PNG26.png);
+  background-image: url(../images/sampicon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 450px;
-  width: 450px;
-  bottom: 14%;
-  left: 0;
+  height: 250px;
+  width: 250px;
+  top: 10%;
+  left: 5%;
+  opacity: 0.5;
   z-index: 0;
 }
 
@@ -83,6 +85,7 @@ html {
   z-index: 2;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
+
 .header__body {
   position: relative;
   display: flex;
@@ -130,7 +133,7 @@ html {
 .header__link {
   color: var(--colorText);
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
@@ -222,6 +225,7 @@ html {
     font-size: 22px;
   }
 }
+
 /* ------------------------------content text------------------------------ */
 .content {
   padding: 100px 0px 0px 0px;
@@ -238,6 +242,7 @@ html {
 .content__text h1 {
   margin: 0 0 30px 0;
   color: var(--colorText);
+  z-index: 5;
 }
 .content__text p {
   display: flex;
@@ -246,6 +251,7 @@ html {
   margin: 0px 0px 20px 0px;
   width: 800px;
   color: var(--colorText);
+  z-index: 5;
 }
 
 /* ------------------------------content buttons------------------------------ */
@@ -260,6 +266,7 @@ html {
   width: 251px;
   padding: 15px 0;
   font-size: 20px;
+  z-index: 5;
   transition: all 0.3s ease 0s;
 }
 .content__buttons__create:focus,
@@ -274,6 +281,7 @@ html {
   font-size: 20px;
   color: var(--colorText);
   background-color: #00a749;
+  z-index: 5;
   transition: all 0.3s ease 0s;
 }
 .content__buttons__download:focus,
@@ -313,6 +321,7 @@ html {
 .content__card__shadow img {
   width: 100%;
 }
+
 /* ------------------------------footer------------------------------ */
 .footer {
   display: flex;
@@ -320,6 +329,19 @@ html {
   align-items: center;
   margin-top: 100px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/pngimg.com\ -\ gta_PNG26.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  bottom: 14%;
+  left: 0;
+  z-index: 0;
 }
 
 .footer__title {
@@ -346,83 +368,292 @@ html {
   margin: 30px 0 60px 0;
   color: var(--colorText);
 }
-/* ------------------------------adaptiv content------------------------------ */
-@media (max-width: 825px) {
-  .content {
-    padding: 70px 0 0 0;
+
+/* ------------------------------------------------------------ */
+/* ------------------------------adaptiv content (max-width: 420px)------------------------------ */
+@media (max-width: 440px) {
+  .wrapper::before {
+    height: 70px;
+    width: 70px;
+    top: 37%;
+    right: 6%;
   }
-  body.lock {
-    overflow: hidden;
+  .wrapper::after {
+    height: 130px;
+    width: 130px;
+    top: 24%;
+    left: -7%;
+    opacity: 1;
   }
   /* ------------------------------content text------------------------------ */
+  .content {
+    padding: 50px 0 0 0;
+  }
   .content__text {
     margin: 40px 0 0 0;
+    font-size: 15px;
+    line-height: 20px;
   }
   .content__text h1 {
-    font-size: 22px;
-    z-index: 5;
+    margin: 0 0 30px 0;
   }
   .content__text p {
-    width: 275px;
-    z-index: 5;
+    margin: 0px 0px 20px 0px;
+    width: 300px;
   }
+
   /* ------------------------------content buttons------------------------------ */
   .content__buttons {
     flex-direction: column;
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
     align-items: center;
   }
   .content__buttons__create {
-    margin: 0 0 25px 0;
-    width: 150px;
-    padding: 12px 0;
-    font-size: 14px;
-    z-index: 5;
+    margin: 0 0 30px 0;
+    width: 201px;
+    padding: 13px 0;
+    font-size: 15px;
   }
   .content__buttons__download {
-    width: 150px;
-    padding: 12px 0;
-    font-size: 14px;
-    z-index: 5;
+    width: 201px;
+    padding: 13px 0;
+    font-size: 15px;
   }
+
+  /* ------------------------------content card------------------------------ */
+  .content__card__card {
+    margin: 90px 0 0 0;
+  }
+  .content__card__shadow {
+    width: 250px;
+  }
+  .content__card__shadow::before {
+    font-size: 20px;
+  }
+
+  /* ------------------------------footer------------------------------ */
+  .footer {
+    margin-top: 120px;
+  }
+  .footer::before {
+    height: 150px;
+    width: 150px;
+    bottom: 14.5%;
+  }
+
+  .footer__title {
+    font-size: 12px;
+    margin: 20px 0 0 0;
+    color: var(--colorText);
+  }
+  .footer__button {
+    width: 201px;
+    padding: 13px 0;
+    font-size: 15px;
+  }
+  .footer__dopinfo {
+    margin: 25px 0 50px 0;
+    font-size: 10px;
+    color: var(--colorText);
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------(min-width: 441px) and (max-width: 620px)------------------------------ */
+@media (min-width: 441px) and (max-width: 620px) {
+  .wrapper::before {
+    height: 110px;
+    width: 110px;
+    top: 33%;
+    right: 0;
+  }
+  .wrapper::after {
+    height: 120px;
+    width: 120px;
+    top: 5%;
+    left: -4%;
+    opacity: 1;
+  }
+
+  /* ------------------------------content text------------------------------ */
+  .content {
+    padding: 60px 0 0 0;
+  }
+  .content__text {
+    margin: 50px 0 0 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .content__text h1 {
+    margin: 0 0 35px 0;
+  }
+  .content__text p {
+    margin: 0px 0px 25px 0px;
+    width: 390px;
+  }
+
+  /* ------------------------------content buttons------------------------------ */
+  .content__buttons {
+    flex-direction: row;
+    margin: 30px 0 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .content__buttons__create {
+    margin: 0 25px 0 0;
+    width: 211px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+  .content__buttons__download {
+    width: 211px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
   /* ------------------------------content card------------------------------ */
   .content__card__card {
     margin: 50px 0 0 0;
   }
   .content__card__shadow {
-    width: 150px;
+    width: 280px;
   }
   .content__card__shadow::before {
-    font-size: 15px;
-  }
-  /* ------------------------------footer------------------------------ */
-  .footer {
-    margin: 40px 0 0 0;
-  }
-  .footer__title {
-    font-size: 15px;
-  }
-  .footer__button {
-    width: 150px;
-    padding: 12px 0;
-    font-size: 14px;
-  }
-  .footer__dopinfo {
-    font-size: 14px;
-    margin: 30px 0 40px 0;
+    font-size: 25px;
   }
 
-  /* ------------------------------background-image------------------------------ */
+  /* ------------------------------footer------------------------------ */
+  .footer::before {
+    height: 200px;
+    width: 200px;
+    bottom: 17%;
+  }
+
+  .footer__title {
+    font-size: 18px;
+  }
+  .footer__button {
+    width: 211px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------(min-width: 621px) and (max-width: 1024px)------------------------------ */
+@media (min-width: 621px) and (max-width: 1024px) {
   .wrapper::before {
-    width: 150px;
-    height: 150px;
-    top: 32%;
-    z-index: 0;
+    height: 180px;
+    width: 180px;
+    top: 35%;
   }
   .wrapper::after {
+    height: 150px;
+    width: 150px;
+    top: 4%;
+    left: 0;
+    opacity: 1;
+  }
+
+  /* ------------------------------content text------------------------------ */
+  .content {
+    padding: 70px 0 0 0;
+  }
+  .content__text {
+    margin: 60px 0 0 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .content__text h1 {
+    margin: 0 0 40px 0;
+  }
+  .content__text p {
+    margin: 0px 0px 25px 0px;
+    width: 590px;
+  }
+
+  /* ------------------------------content buttons------------------------------ */
+  .content__buttons {
+    margin: 40px 0 0 0;
+  }
+  .content__buttons__create {
+    margin: 0 70px 0 0;
+    width: 231px;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+  .content__buttons__download {
+    width: 231px;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  /* ------------------------------content card------------------------------ */
+  .content__card__card {
+    margin: 70px 0 0 0;
+  }
+  .content__card__shadow {
+    width: 300px;
+  }
+  .content__card__shadow::before {
+    font-size: 30px;
+  }
+
+  /* ------------------------------footer------------------------------ */
+  .footer {
+    margin-top: 100px;
+  }
+  .footer::before {
+    height: 200px;
+    width: 200px;
+    bottom: 16.4%;
+  }
+
+  .footer__title {
+    font-size: 22px;
+  }
+  .footer__button {
+    width: 231px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------(min-width: 1025px) and (max-width: 1240px)------------------------------ */
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .wrapper::before {
     height: 250px;
     width: 250px;
-    bottom: 16%;
+    top: 30%;
+  }
+  .wrapper::after {
+    height: 220px;
+    width: 220px;
+    top: 10%;
     left: 0;
+    opacity: 1;
+  }
+
+  /* ------------------------------content card------------------------------ */
+  .content__card__shadow {
+    width: 350px;
+  }
+  .content__card__shadow::before {
+    font-size: 35px;
+  }
+
+  /* ------------------------------footer------------------------------ */
+  .footer {
+    margin-top: 100px;
+  }
+  .footer::before {
+    height: 350px;
+    width: 350px;
+    bottom: 14.5%;
+  }
+
+  .footer__title {
+    font-size: 30px;
   }
 }

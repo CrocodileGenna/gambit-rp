@@ -133,6 +133,7 @@ html {
 }
 
 .header__link {
+  padding: 10px 2px;
   color: var(--colorText);
   text-transform: uppercase;
   font-size: 16px;
@@ -371,7 +372,7 @@ html {
 }
 
 /* ------------------------------------------------------------ */
-/* ------------------------------adaptiv content (max-width: 420px)------------------------------ */
+/* ------------------------------adaptiv content (max-width: 440px)------------------------------ */
 @media (max-width: 440px) {
   .wrapper::before {
     height: 70px;
@@ -438,7 +439,7 @@ html {
   .footer::before {
     height: 150px;
     width: 150px;
-    bottom: 14.5%;
+    bottom: 14.3%;
   }
 
   .footer__title {

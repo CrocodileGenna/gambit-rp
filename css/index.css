@@ -924,3 +924,47 @@ html {
   color: var(--akcent);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: 750px) {
+  .modal-join__content {
+    width: 370px;
+    height: 400px;
+    padding: 10px;
+  }
+
+  /* Close button styles */
+  .close-join {
+    font-size: 45px;
+  }
+
+  .modal-join__content h1 {
+    padding: 20px 0 0 0;
+    font-size: 18px;
+  }
+
+  .modal-join__lable {
+    margin: 10px 8px;
+    font-size: 17px;
+  }
+  .modal-join__lable input {
+    padding: 6px;
+    margin: 5px;
+  }
+
+  .modal-join__lable .text {
+    width: 100%;
+    height: 140px;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px;
+    background-color: #00000085;
+    color: var(--colorText);
+    transition: all 0.3s ease 0s;
+  }
+
+  .modal-join__content button {
+    padding: 10px 0;
+    width: 151px;
+    font-size: 15px;
+  }
+}

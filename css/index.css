@@ -307,6 +307,7 @@ html {
   justify-content: center;
   margin: 100px 0 0 0;
 }
+
 .content__card__shadow {
   position: relative;
   border-radius: 5px;
@@ -314,13 +315,17 @@ html {
   border: 4px var(--colorText) solid;
   background-color: var(--colorText);
   filter: brightness(0.5);
+  cursor: pointer;
   z-index: 5;
-  transition: all 0.6s ease 0s;
+  transition: all 0.65s ease 0s;
 }
+
 .content__card__shadow:focus,
 .content__card__shadow:hover {
   filter: brightness(1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
+
 .content__card__shadow::before {
   content: "GAMBIT";
   position: absolute;
@@ -329,7 +334,16 @@ html {
   font-size: 30px;
   color: var(--colorText);
 }
+.content__card__shadow::after {
+  content: "Подробнее...";
+  position: absolute;
+  right: 4%;
+  bottom: 3%;
+  font-size: 13px;
+  color: var(--colorText);
+}
 .content__card__shadow img {
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -440,6 +454,9 @@ html {
   .content__card__shadow::before {
     font-size: 20px;
   }
+  .content__card__shadow::after {
+    font-size: 10px;
+  }
 
   /* ------------------------------footer------------------------------ */
   .footer {
@@ -530,6 +547,9 @@ html {
   .content__card__shadow::before {
     font-size: 25px;
   }
+  .content__card__shadow::after {
+    font-size: 11px;
+  }
 
   /* ------------------------------footer------------------------------ */
   .footer::before {
@@ -606,6 +626,9 @@ html {
   .content__card__shadow::before {
     font-size: 30px;
   }
+  .content__card__shadow::after {
+    font-size: 12px;
+  }
 
   /* ------------------------------footer------------------------------ */
   .footer {
@@ -648,6 +671,9 @@ html {
   }
   .content__card__shadow::before {
     font-size: 35px;
+  }
+  .content__card__shadow::after {
+    font-size: 13px;
   }
 
   /* ------------------------------footer------------------------------ */
@@ -770,7 +796,6 @@ html {
   box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-/*  */
 /*  */
 @media (min-width: 750px) {
   .modal-content {
@@ -925,6 +950,7 @@ html {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
+/*  */
 @media (min-width: 750px) {
   .modal-join__content {
     width: 370px;

@@ -115,6 +115,7 @@
               id="password"
               name="password"
               class="password"
+              minlength="8"
               required
             />
 
@@ -124,6 +125,7 @@
               id="password"
               name="password"
               class="audit-password"
+              minlength="8"
               required
             />
           </div>
@@ -145,6 +147,30 @@
         </form>
       </div>
     </div>
+
+    <!-- Modal join-->
+    <div id="myModal" class="modal-join">
+      <!-- Modal content -->
+      <div class="modal-join__content">
+        <span class="close-join" onclick="closeModal()">&times;</span>
+        <h1>Оставьте свою заявку на рассмотрение</h1>
+        <div">
+          <lamle class="modal-join__lable">
+            Email:
+            <input type="email" />
+          </lamle>
+          <lamle class="modal-join__lable">
+            Общая информация:
+            <textarea type="text"
+                name="user-text"
+                placeholder="Какой род деятельности предпочитаете на сервере"
+                minlength="3"class="text"></textarea>
+          </lamle>
+        <button type="submit">Оставьт заявку</button>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/index.js"></script>
   </body>
 </html>

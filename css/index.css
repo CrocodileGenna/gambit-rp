@@ -770,6 +770,7 @@ html {
 
 .modal-content__form input:hover,
 .modal-content__form input:focus {
+  outline: none;
   background-color: var(--hoverColor);
 }
 
@@ -792,6 +793,7 @@ html {
 }
 .modal-content button:hover,
 .modal-content button:focus {
+  outline: none;
   color: var(--akcent);
   box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
 }
@@ -913,6 +915,7 @@ html {
   border-radius: 4px;
   padding: 4px;
   margin: 2px;
+  outline: none;
   transition: all 0.3s ease 0s;
 }
 .modal-join__lable input:hover,
@@ -927,6 +930,7 @@ html {
   margin: 4px;
   background-color: #00000085;
   color: var(--colorText);
+  outline: none;
   transition: all 0.3s ease 0s;
 }
 .modal-join__lable .text:hover,
